@@ -10,7 +10,6 @@
     <meta name="description" content="Test case for firstOFD" />
   </head>
   <body>
-    <script src="./main.js"></script>
     <header class="header">
       <div class="header__content">
         <img class="header__logo" src="img/header-logo.svg" />
@@ -213,6 +212,46 @@
           <div class="testimonials__dot testimonials__dot_active"></div>
           <div class="testimonials__dot"></div>
         </div>
+      </div>
+    </div>
+    <div class="clients">
+      <div class="clients__content">
+        <img class="clients__logo" src="img/clients1.svg" />
+        <img class="clients__logo" src="img/clients2.svg" />
+        <img class="clients__logo" src="img/clients3.svg" />
+        <img class="clients__logo" src="img/clients4.svg" />
+        <img class="clients__logo" src="img/clients5.svg" />
+      </div>
+    </div>
+    <div class="form">
+      <div class="form__content">
+        <h1 class="form__title">Need a Project?</h1>
+        <h3 class="form__description">
+          Let us know what you're looking for in an agency. We'll take a look
+          and see if this could be the start of something beautiful.
+        </h3>
+        <form id="form" class="form__container">
+          <input name="name" placeholder="Your Name" class="form__input" />
+          <input name="email" placeholder="Your Email" class="form__input" />
+          <input
+            name="title"
+            placeholder="Your Title"
+            class="form__input form__input_big"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Comment"
+            class="form__textarea"
+            rows="5"
+          ></textarea>
+        </form>
+        <h3 id="errors" class="form__errors"></h3>
+        <div class="form__btn-container">
+          <button id="formButton" class="form__button">
+            send message
+          </button>
+        </div>
+        <h3 id="success" class="form__success"></h3>
       </div>
     </div>
     <footer>
