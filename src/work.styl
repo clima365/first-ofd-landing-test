@@ -1,0 +1,33 @@
+.work
+  width 100%
+
+.work__cards
+  width 100%
+  display grid
+  grid-template-columns repeat(4, 1fr)
+
+.work__card
+  height 300px
+  background-color black
+  opacity 0.3
+  transition all .1s linear
+  display flex
+  justify-content center
+  align-items center
+  &:hover
+    opacity 1 !important
+    .work__icon
+      opacity 1
+
+.work__card_first-line
+  &:nth-of-type(odd)
+    opacity 0.5
+
+.work__card_second-line
+  &:nth-of-type(even)
+    opacity 0.5
+
+.work__icon
+  width 48px
+  opacity 0
+  transition all .1s linear
